@@ -6,7 +6,7 @@ using Statistics
 #Step 1: Initialization
 n=1000 #Impact limit
 N=50 #Number of nodes
-t=200000
+t=100000
 P=60
 I = [rand(1:n) for i in 1:N] #Node impact vector
 Imean=[sum(I)/N]
@@ -136,6 +136,8 @@ end
 plot1=plot(1:t,E/E0,legend=false)
 xlabel!("Time")
 ylabel!("E/E0")
+xlims!(51000,52000)
+#ylims!(2,2.5)
 title!("Energy")
 display(plot1)
 png("plot1")
@@ -143,9 +145,11 @@ png("plot1")
 plot2=plot(1:(t+1),Imean,legend=false)
 xlabel!("Time")
 ylabel!("Mean impact")
+xlims!(51000,51500)
+ylims!(950,1000)
 title!("Mean Impact over Time")
 display(plot2)
-png("plot2")
+png("plot2b")
 
 plot3=plot(1:t,popularity,legend=false)
 xlabel!("Time")

@@ -1,2 +1,3 @@
-println("test")
-println(1+2)
+include("init.jl")
+include("dynamics.jl")
+include("analysis.jl")
