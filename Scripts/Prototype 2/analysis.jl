@@ -1,43 +1,38 @@
 using LightGraphs
 using Plots
-
-#X=X(t)
-E = []
-Preference = []
+using DataFrames
 
 function computeEnergy()
     global Network
     global nodes
-    global E
+    global Data
 
-    #Compute sytem energy and log it at time point
-    push!(E,0)
+    #Compute sytem energy
+    E = 0
     for i in 1:length(nodes)
-        E[end] += nodes[i].energy
+        Data.E[end] += nodes[i].energy
     end
-
-    #TODO: implement storage    
 end
 
 function dE(ID)
     global Network
     global nodes
     global T
+    global J
 
-    #Goes through inneighbors and computes fitness (η)
+    #Goes through inneighbors and computes node energy (ε)
     options = inneighbors(Network,ID)
-    η=0
+    ε = 0
     for i in 1:length(options)
-        η += 1- (((abs(nodes[ID].values[1]-nodes[options[i]].values[1]))
-             +(abs(nodes[ID].values[2]-nodes[options[i]].values[2]))
-             +(abs(nodes[ID].values[3]-nodes[options[i]].values[3]))
-             +(abs(nodes[ID].values[4]-nodes[options[i]].values[4]))
-             +(abs(nodes[ID].values[5]-nodes[options[i]].values[5])))
-             /50)
+        if nodes[ID].vote == nodes[options[i]].vote
+            ε += J
+        else
+            ε += -J
+        end
     end
 
-    #Computes node energy
-    nodes[ID].energy = -T*η
+    #Assign node energy
+    nodes[ID].energy = ε
 end
 
 function Entropy()
@@ -51,27 +46,41 @@ end
 function trackPreference(ID)
     global Network
     global nodes
-    global Preference
+    global Data
     
     #Count popularity of each candidate
-    tracker = zeros(10)
-    for i in 1:length(inneighbors(Network,ID))
-        for j in 1:10
-            if nodes[i].vote == j
-                tracker[j] += 1
-            end
+    for i in 1:length(nodes)
+        #Unrolled loop for each candidate 
+        #(unfortunately it makes it difficult to change candidate number)
+        if nodes[i].vote == 1
+            Data.c1[end] += 1
+        elseif nodes[i].vote == 2
+            Data.c2[end] += 1
+        elseif nodes[i].vote == 3
+            Data.c3[end] += 1
+        elseif nodes[i].vote == 4
+            Data.c4[end] += 1
+        elseif nodes[i].vote == 5
+            Data.c5[end] += 1
+        elseif nodes[i].vote == 6
+            Data.c6[end] += 1
+        elseif nodes[i].vote == 7
+            Data.c7[end] += 1
+        elseif nodes[i].vote == 8
+            Data.c8[end] += 1
+        elseif nodes[i].vote == 9
+            Data.c9[end] += 1
+        elseif nodes[i].vote == 10
+            Data.c10[end] += 1
         end
     end
-
-    #Log the preferences at time point
-    push!(Preference,tracker)
 end
 
 #Plotting
 #TODO: get it from storage
 function plotAnalysis(t)
     #Energy evolution
-    plot1=plot(1:t+1,E,legend=false)
+    plot1=plot(2:t+1,E[2:t+1]/E[1],legend=false)
     xlabel!("Time")
     ylabel!("E/E_0")
     #xlims!(51000,52000)

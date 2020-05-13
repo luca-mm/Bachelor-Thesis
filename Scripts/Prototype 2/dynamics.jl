@@ -1,5 +1,6 @@
 using Random
 using LightGraphs
+using DataFrames
 
 include("storage.jl")
 include("analysis.jl")
@@ -19,8 +20,12 @@ end
 function Procedure2(ID,N,P)   
     global Network
     global nodes
-    
-    #Select unconnected node, connect with probabilty w
+    global Data
+
+    #Add new row to data frame
+    push!(Data, (0,0,0,0,0,0,0,0,0,0,0))
+
+    #Select unconnected node, connect with probability w
     options = [i for i in 1:N]
     for i in 1:length(inneighbors(Network,ID))
         #deleteat!(options,inneighbors(Network,ID)[i])
