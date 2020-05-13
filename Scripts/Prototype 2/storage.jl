@@ -8,11 +8,11 @@ end
 
 function exportData()
     #Get time of export
-    exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
+    global exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
     mkdir(string("Data\\",exportTime))
 
     #Save graph
 
     #Save data frame
-    CSV.write(string("Data\\",exportTime,"\\","test.csv"), Data)
+    CSV.write(string("Data\\",exportTime,"\\","data.csv"), Data)
 end

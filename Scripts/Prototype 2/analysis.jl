@@ -79,19 +79,22 @@ end
 #Plotting
 #TODO: get it from storage
 function plotAnalysis(t)
+    global Data
+    global exportTime
+
     #Energy evolution
-    plot1=plot(2:t+1,E[2:t+1]/E[1],legend=false)
+    plot1=plot(1:t+1,Data.E[1:t+1]#=/Data.E[1]=#,legend=false)
     xlabel!("Time")
     ylabel!("E/E_0")
     #xlims!(51000,52000)
     #ylims!(2,2.5)
     title!("Energy")
-    png("Data\\Energy")
+    png(string("Data\\",exportTime,"\\","Energy"))
 
     #Energy histogram
-    plot2=histogram(E)
+    plot2=histogram(Data.E)
     title!("Energy distribution")
-    png("Data\\EnergyDistribution")
+    png(string("Data\\",exportTime,"\\","EnergyDistribution"))
 
     #Preference evolution
     #=UNDER CONSTRUCTION
