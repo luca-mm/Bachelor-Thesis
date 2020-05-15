@@ -35,4 +35,7 @@ function initNetwork(N)
         dE(i)
     end
     computeEnergy()
+
+    #Count initial preferences
+    trackPreference()
 end

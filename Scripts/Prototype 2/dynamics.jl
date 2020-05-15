@@ -78,12 +78,16 @@ function Procedure2(ID,N,P)
             end
         end
     end
+    
+    oldVal = nodes[ID].vote
+    
     if rand(0.0:1.0)<=P
+        oldVal = nodes[ID].vote
         nodes[ID].vote = findmax(weight)[2] #Support the most popular candidate
     end
 
     #Log preferences
-    trackPreference(ID)
+    trackPreference(oldVal, nodes[ID].vote)
 
     #Compute energy contribution
     dE(ID)

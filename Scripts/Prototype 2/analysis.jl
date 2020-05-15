@@ -43,8 +43,7 @@ function stateVariable()
 
 end
 
-function trackPreference(ID)
-    global Network
+function trackPreference()
     global nodes
     global Data
     
@@ -73,6 +72,56 @@ function trackPreference(ID)
         elseif nodes[i].vote == 10
             Data.c10[end] += 1
         end
+    end
+end
+
+function trackPreference(old, new)
+    global nodes
+    global Data
+    #Remove old value
+    if old == 1
+        Data.c1[end] = Data.c1[end-1] - 1
+    elseif old == 2
+        Data.c2[end] = Data.c2[end-1] - 1
+    elseif old == 3
+        Data.c3[end] = Data.c3[end-1] - 1
+    elseif old == 4
+        Data.c4[end] = Data.c4[end-1] - 1
+    elseif old == 5
+        Data.c5[end] = Data.c5[end-1] - 1
+    elseif old == 6
+        Data.c6[end] = Data.c6[end-1] - 1
+    elseif old == 7
+        Data.c7[end] = Data.c7[end-1] - 1
+    elseif old == 8
+        Data.c8[end] = Data.c8[end-1] - 1
+    elseif old == 9
+        Data.c9[end] = Data.c9[end-1] - 1
+    elseif old == 10
+        Data.c10[end] = Data.c10[end-1] - 1
+    end
+    
+    #Add new value
+    if new == 1
+        Data.c1[end] = Data.c1[end-1] + 1
+    elseif new == 2
+        Data.c2[end] = Data.c2[end-1] + 1
+    elseif new == 3
+        Data.c3[end] = Data.c3[end-1] + 1
+    elseif new == 4
+        Data.c4[end] = Data.c4[end-1] + 1
+    elseif new == 5
+        Data.c5[end] = Data.c5[end-1] + 1
+    elseif new == 6
+        Data.c6[end] = Data.c6[end-1] + 1
+    elseif new == 7
+        Data.c7[end] = Data.c7[end-1] + 1
+    elseif new == 8
+        Data.c8[end] = Data.c8[end-1] + 1
+    elseif new == 9
+        Data.c9[end] = Data.c9[end-1] + 1
+    elseif new == 10
+        Data.c10[end] = Data.c10[end-1] + 1
     end
 end
 

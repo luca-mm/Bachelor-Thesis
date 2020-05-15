@@ -19,7 +19,7 @@ function Run(temperature,nodes,steps,P)
     end
 
     #Export data to a new folder
-    exportData()
+    exportData(Data)
     plotAnalysis(steps)
 end
 
