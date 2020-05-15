@@ -15,6 +15,8 @@ end
 
 function exportData() 
     #Save data frame
-    CSV.write(string("Data\\",exportTime,"\\","data.csv"), logs)
+    CSV.write(string("Data\\",exportTime,"\\","data.csv"), Data)
+    
+    #Exporting the graph doesn't work for some reason:
     #draw(PNG(string("Data\\",exportTime,"\\","graph.png")), gplot(Network))
 end
