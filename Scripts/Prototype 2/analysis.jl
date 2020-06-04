@@ -20,20 +20,55 @@ function dE(ID)
     global T
     global J
 
-    #Goes through inneighbors and computes node energy (ε)
+    #Goes through inneighbors and computes Potts node energy (ε)
     options = inneighbors(Network,ID)
     ε = 0
     for i in 1:length(options)
         if nodes[ID].vote == nodes[options[i]].vote
-            ε += J
-        else
             ε += -J
         end
     end
 
     #Assign node energy
-    nodes[ID].energy = ε
+    return ε
 end
+
+#=Like dE(), but returns energy difference instead of assigning it automatically: 
+function ΔE(ID,newVal)
+    global Network
+    global nodes
+    global T
+    global J
+
+    #Goes through inneighbors and computes Potts node energy (ε)
+    options = inneighbors(Network,ID)
+    ε = 0
+    for i in 1:length(options)
+        if nodes[ID].vote == nodes[options[i]].vote
+            ε += -J
+        end
+    end
+
+    #Assign node energy
+    nodes[ID].energy = ε 
+end=#
+
+#=(Not ready yet)
+function generateEnergyDistribution()
+    #Determine maximum energy
+    E_max = findmax(Data.E)[1]
+    global distrib = zeros(E_max+1)
+
+    #Count energy levels
+    for i in 1:length(Data.E)
+        distrib()
+    end
+
+    #Normalize?
+
+    return 0
+end
+=#
 
 function Entropy()
 
@@ -142,6 +177,8 @@ end
 function plotAnalysis(t)
     global Data
     global exportTime
+    global nodes
+    global Network
 
     #Energy evolution
     plot1=plot(1:t+1,Data.E[1:t+1]#=/Data.E[1]=#,legend=false)
@@ -152,10 +189,19 @@ function plotAnalysis(t)
     title!("Energy")
     png(string("Data\\",exportTime,"\\","Energy"))
 
-    #Energy histogram
+    #Energy distribution
     plot2=histogram(Data.E)
     title!("Energy distribution")
     png(string("Data\\",exportTime,"\\","EnergyDistribution"))
+
+    #Inneighbor histogram
+    noInneighbors = []
+    for i in 1:length(nodes)
+        push!(noInneighbors, length(inneighbors(Network, i)))
+    end
+    plot3=histogram(noInneighbors, bins = 15)
+    title!("Inneighbor histogram")
+    png(string("Data\\",exportTime,"\\","InneighborHistogram"))
 
     #Preference evolution
     #=UNDER CONSTRUCTION
