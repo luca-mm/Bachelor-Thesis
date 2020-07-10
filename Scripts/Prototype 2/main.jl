@@ -1,3 +1,5 @@
+using Dates
+
 include("init.jl")
 include("dynamics.jl")
 include("analysis.jl")
@@ -6,6 +8,9 @@ include("analysis.jl")
 function Run(temperature,nodes,steps,P)
     global T=temperature
     global J = 1
+    
+    #Get time of simulation
+    exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
     
     #Initializing network and data frame
     createDataFrame()
@@ -17,7 +22,7 @@ function Run(temperature,nodes,steps,P)
     end
 
     #Export data to a new folder
-    exportData()
+    exportData(exportTime)
     plotAnalysis(steps)
 end
 
@@ -25,6 +30,9 @@ end
 function SetRun(temperature,nodes,duration)
     global T=temperature
     global J = 1
+    
+    #Get time of simulation
+    exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
     
     #Initializing network and data frame
     createDataFrame()
@@ -38,8 +46,56 @@ function SetRun(temperature,nodes,duration)
     end
 
     #Export data to a new folder
-    exportData()
+    exportData(exportTime)
     plotAnalysis(length(Data.E)-1)
+end
+
+#Runs n determined length simulation with populations increasing 100 agents at a time up to a determined size
+function SweepPopulations(temperature,maxNodes,steps)
+    global T=temperature
+    global J = 1
+    
+    #Get time of simulation
+    #exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
+    
+    for i in 100:100:maxNodes
+        #Initializing network and data frame
+        createDataFrame()
+        initNetwork(i)
+
+        #Executing steps
+        for j in 1:steps
+            Procedure2(rand(1:nodes),nodes,P)
+        end
+
+        #Export data to a new folder
+        exportData(string("Population Sweep: ",i))
+        plotAnalysis(steps)
+    end
+end
+
+#Run successive simulations in increments of 100 steps
+function SweepTime(temperature,nodes,maxSteps)
+    global T=temperature
+    global J = 1
+    
+    #Get time of simulation
+    #exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
+    
+    for i in 100:100:maxSteps
+        #Initializing network and data frame
+        createDataFrame()
+        initNetwork(nodes)
+
+        #Executing steps
+        for j in 1:i
+            Procedure2(rand(1:nodes),nodes,0.5)
+        end
+
+        #Export data to a new folder
+        exportData(string("Time Sweep: ",i))
+        plotAnalysis(i)
+    end
 end
 
 #Runs multiple simulation at incremental temperatures

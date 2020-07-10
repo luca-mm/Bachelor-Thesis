@@ -2,3 +2,15 @@ Energy tracking (is it consistent with network update?)
 Network export
 Multisampling analysis & scripts
 Comments
+
+=======================================================
+
+Resource monitoring FACEM @timev LA EXECUTIE SI COPIEM
+Time report FACEM @timev LA EXECUTIE SI COPIEM
+Increasing pops DONE
+Increasing time DONE
+
+Preference evolution
+Pajek export 
+Pass name to export function & generate time in main.jl DONE
+Energy counter MEH
