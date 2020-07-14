@@ -174,9 +174,8 @@ end
 
 #Plotting
 #TODO: get it from storage
-function plotAnalysis(t)
+function plotAnalysis(t,dir)
     global Data
-    global exportTime
     global nodes
     global Network
 
@@ -187,12 +186,12 @@ function plotAnalysis(t)
     #xlims!(51000,52000)
     #ylims!(2,2.5)
     title!("Energy")
-    png(string("Data\\",exportTime,"\\","Energy"))
+    png(string("Data/",dir,"/","Energy"))
 
     #Energy distribution
     plot2=histogram(Data.E)
     title!("Energy distribution")
-    png(string("Data\\",exportTime,"\\","EnergyDistribution"))
+    png(string("Data/",dir,"/","EnergyDistribution"))
 
     #Inneighbor histogram
     noInneighbors = []
@@ -201,7 +200,7 @@ function plotAnalysis(t)
     end
     plot3=histogram(noInneighbors, bins = 15)
     title!("Inneighbor histogram")
-    png(string("Data\\",exportTime,"\\","InneighborHistogram"))
+    png(string("Data/",dir,"/","InneighborHistogram"))
 
     #Preference evolution
     #=UNDER CONSTRUCTION

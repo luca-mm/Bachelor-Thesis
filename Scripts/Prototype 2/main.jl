@@ -23,7 +23,7 @@ function Run(temperature,nodes,steps,P)
 
     #Export data to a new folder
     exportData(exportTime)
-    plotAnalysis(steps)
+    plotAnalysis(steps, exportTime)
 end
 
 #Runs the simulation at T for a determined time interval (in hours)
@@ -47,7 +47,7 @@ function SetRun(temperature,nodes,duration)
 
     #Export data to a new folder
     exportData(exportTime)
-    plotAnalysis(length(Data.E)-1)
+    plotAnalysis(length(Data.E)-1, exportTime)
 end
 
 #Runs n determined length simulation with populations increasing 100 agents at a time up to a determined size
@@ -70,7 +70,7 @@ function SweepPopulations(temperature,maxNodes,steps)
 
         #Export data to a new folder
         exportData(string("Population Sweep: ",i))
-        plotAnalysis(steps)
+        plotAnalysis(steps, string("Population Sweep: ",i))
     end
 end
 
@@ -94,7 +94,7 @@ function SweepTime(temperature,nodes,maxSteps)
 
         #Export data to a new folder
         exportData(string("Time Sweep: ",i))
-        plotAnalysis(i)
+        plotAnalysis(i, string("Time Sweep: ",i))
     end
 end
 
