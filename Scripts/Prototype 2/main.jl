@@ -82,7 +82,7 @@ function SweepTime(temperature,nodes,maxSteps)
     #Get time of simulation
     #exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
     
-    for i in 10:10:maxSteps
+    for i in 100:100:maxSteps
         #Initializing network and data frame
         createDataFrame()
         initNetwork(nodes)
