@@ -10,8 +10,8 @@ end
 
 function exportData(dir) 
     #Save data frame
-    mkdir(string("Data\\",dir))
-    CSV.write(string("Data\\",dir,"\\","data.csv"), Data)
+    mkdir(string("Data/",dir))
+    CSV.write(string("Data/",dir,"/","data.csv"), Data)
     
     #Exporting the graph doesn't work for some reason:
     #draw(PNG(string("Data\\",exportTime,"\\","graph.png")), gplot(Network))
