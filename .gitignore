@@ -13,3 +13,5 @@ Scripts/Prototype 2/Data/*
 
 # exception to the rule
 !Scripts/Prototype 2/Data/.gitkeep 
+
+Saved Data/*

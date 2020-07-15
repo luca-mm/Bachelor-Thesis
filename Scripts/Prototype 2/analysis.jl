@@ -1,5 +1,6 @@
 using LightGraphs
 using Plots
+using StatsBase
 using DataFrames
 
 function computeEnergy()
@@ -180,7 +181,7 @@ function plotAnalysis(t,dir)
     global Network
 
     #Energy evolution
-    plot1=plot(1:t+1,Data.E[1:t+1]#=/Data.E[1]=#,legend=false)
+    plot1=plot(1:t+1, Data.E[1:t+1]#=/Data.E[1]=#, legend=false)
     xlabel!("Time")
     ylabel!("E/E_0")
     #xlims!(51000,52000)
@@ -189,7 +190,8 @@ function plotAnalysis(t,dir)
     png(string("Data/",dir,"/","Energy"))
 
     #Energy distribution
-    plot2=histogram(Data.E)
+    energyDistribution=counts(-Data.E)
+    plot2=plot(1:length(energyDistribution), energyDistribution, legend=false)
     title!("Energy distribution")
     png(string("Data/",dir,"/","EnergyDistribution"))
 
