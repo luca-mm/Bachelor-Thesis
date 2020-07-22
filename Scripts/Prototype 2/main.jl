@@ -41,7 +41,7 @@ function SetRun(temperature,nodes,duration)
     timelimit = Dates.now() + Dates.Minute(duration)
     
     #Executing steps
-    while Dates.now() < timelimit && length(Data.E) <= 2000000
+    while Dates.now() < timelimit && length(Data.E) #<= 2000000
         Procedure2(rand(1:nodes),nodes,0.5)
     end
 
