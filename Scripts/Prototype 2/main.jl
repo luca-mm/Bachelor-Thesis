@@ -20,7 +20,7 @@ function Run(temperature,nodes,steps,P)
     for i in 1:steps
         Procedure2(rand(1:nodes),nodes,P)
 
-        if mod(steps, 100) == 0
+        if mod(steps, div(steps, 100)) == 0
             println(div(i*100,steps),"% done (",i,")")
         end
     end
