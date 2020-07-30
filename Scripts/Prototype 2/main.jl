@@ -19,6 +19,10 @@ function Run(temperature,nodes,steps,P)
     #Executing steps
     for i in 1:steps
         Procedure2(rand(1:nodes),nodes,P)
+
+        if mod(steps, 100) == 0
+            println(div(i*100,steps),"% done (",i,")")
+        end
     end
 
     #Export data to a new folder
