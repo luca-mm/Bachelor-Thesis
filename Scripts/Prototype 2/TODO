@@ -13,8 +13,8 @@ Increasing time DONE
 Preference evolution
 Pajek export DONE
 Pass name to export function & generate time in main.jl DONE
-Energy counter MEH
+Energy counter DONE
 
-Contactat Nicolin
-Grafic evolutia peak-ului
-La ce ajuta timpul mare???
+Smart dE (fara loop)
+Stocarea energiilor per nod noi într-un vector temporar
+Tot calculul în funcție de asta și diferențele în funcție de energiile curente => un sg loop

@@ -15,6 +15,27 @@ function computeEnergy()
     end
 end
 
+#Computes node energy by assessing the change in preference of an inneighbor
+function dE(ID,oldVal,newVal)
+    global Network
+    global nodes
+    global T
+    global J
+
+    if newVal == nodes[ID].vote && oldVal == nodes[ID].vote
+        ε = nodes[ID].energy
+    elseif newVal == nodes[ID].vote && oldVal != nodes[ID].vote
+        ε = nodes[ID].energy - J
+    elseif newVal != nodes[ID].vote && oldVal == nodes[ID].vote
+        ε = nodes[ID].energy + J
+    else
+        ε = nodes[ID].energy
+    end
+
+    return ε
+end
+
+#Slower: recomputes node energy thoroughly
 function dE(ID)
     global Network
     global nodes

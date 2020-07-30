@@ -51,6 +51,11 @@ function Procedure2(ID,N,P)
             if rand(0.0:1.0)<=p
                 #Add edge
                 add_edge!(Network,target,ID)
+
+                #Adjust energy
+                if nodes[target].vote == nodes[ID].vote
+                    nodes[ID].energy -= J
+                end
             end
         end
         
@@ -67,51 +72,36 @@ function Procedure2(ID,N,P)
             if rand(0.0:1.0)<=p
                 #Remove edge
                 rem_edge!(Network,target,ID)
-            end
-        end
-    end    
-    
-    #=Find majority opinion (deprecated)
-    options = inneighbors(Network,ID)
-    weight = zeros(10) #Weight of each opinion in community
-    for i in 1:length(options)
-        for j in 1:10
-            if nodes[options[i]].vote == j
-                weight[j]+=1
-            end
-        end
-    end
-    =#
 
-    #Track old preference
+                #Adjust energy
+                if nodes[target].vote == nodes[ID].vote
+                    nodes[ID].energy += J
+                end
+            end
+        end
+    end
+
+    #Select new random preference & track preference change
     oldVal = nodes[ID].vote
-    #dE_1
-    global ΔE = 0
-    global ΔE += dE(ID)    
-    for i in outneighbors(Network,ID)
-        global ΔE += dE(i)
-    end
-    #Select random preference
-    nodes[ID].vote = rand(1:10)
-    #dE_2
-    global ΔE -= dE(ID)    
-    for i in outneighbors(Network,ID)
-        global ΔE -= dE(i)
-    end
+    newVal = rand(1:10)
+    nodes[ID].vote = newVal
+
+    #Substract current node energy from former node energy
+    ΔE = dE(ID) - nodes[ID].energy
     
     p = -(ΔE)/T
 
     #If ΔE<0 apply it:
     if ΔE<0
-        nodes[ID].energy = dE(ID)    
+        nodes[ID].energy += ΔE    
         for i in outneighbors(Network,ID)
-            nodes[i].energy = dE(i)
+            nodes[i].energy = dE(i,oldVal,newVal)
         end
     #If ΔE>0 apply it with following probability:
     elseif rand()<exp(p)
-        nodes[ID].energy = dE(ID)    
+        nodes[ID].energy += ΔE    
         for i in outneighbors(Network,ID)
-            nodes[i].energy = dE(i)
+            nodes[i].energy = dE(i,oldVal,newVal)
         end
     else
         nodes[ID].vote = oldVal
