@@ -2,7 +2,6 @@ using LightGraphs
 using Plots
 using StatsBase
 using DataFrames
-using Base.Threads
 
 function computeEnergy()
     global Network
@@ -45,16 +44,15 @@ function dE(ID)
 
     #Goes through inneighbors and computes Potts node energy (ε)
     options = inneighbors(Network,ID)
-    ε = Atomic{Int64}(0)
-    @threads for i in 1:length(options)
+    ε = 0
+    for i in 1:length(options)
         if nodes[ID].vote == nodes[options[i]].vote
-            #Perform ε += -J in a thread-safe way
-            atomic_add!(ε, -J)
+            ε += -J
         end
     end
 
     #Assign node energy
-    return ε[]
+    return ε
 end
 
 #=Like dE(), but returns energy difference instead of assigning it automatically: 

@@ -1,7 +1,6 @@
 using Random
 using LightGraphs
 using DataFrames
-using Base.Threads
 
 include("storage.jl")
 include("analysis.jl")
@@ -95,13 +94,13 @@ function Procedure2(ID,N,P)
     #If ΔE<0 apply it:
     if ΔE<0
         nodes[ID].energy += ΔE    
-        @threads for i in outneighbors(Network,ID)
+        for i in outneighbors(Network,ID)
             nodes[i].energy = dE(i,oldVal,newVal)
         end
     #If ΔE>0 apply it with following probability:
     elseif rand()<exp(p)
         nodes[ID].energy += ΔE    
-        @threads for i in outneighbors(Network,ID)
+        for i in outneighbors(Network,ID)
             nodes[i].energy = dE(i,oldVal,newVal)
         end
     else
