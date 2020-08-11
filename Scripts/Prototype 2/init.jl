@@ -28,7 +28,7 @@ function initNetwork(N)
     =#
 
     #Generate Barabasi graph with N nodes, 3 conntections each, 10 initial nodes
-    global Network = barabasi_albert(N, 10, 3, is_directed=true)
+    global Network = barabasi_albert(N, 10, 3, seed=1, is_directed=true)
     #global Network = erdos_renyi(N, 4, is_directed=true)
     
     #Initialize energy
