@@ -1,4 +1,5 @@
 using Dates
+using Random
 
 include("init.jl")
 include("dynamics.jl")
@@ -9,6 +10,8 @@ function Run(temperature,nodes,steps,P)
     global T=temperature
     global J = 1
     
+    Random.seed!(1234)
+
     #Get time of simulation
     exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
     

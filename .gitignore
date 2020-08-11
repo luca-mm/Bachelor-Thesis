@@ -10,8 +10,10 @@ Scripts/Prototype 1/0.png
 
 # exclude everything
 Scripts/Prototype 2/Data/*
+Scripts/SocialSim/Data/*
 
 # exception to the rule
 !Scripts/Prototype 2/Data/.gitkeep 
+!Scripts/SocialSim/Data/.gitkeep 
 
 Saved Data/*
