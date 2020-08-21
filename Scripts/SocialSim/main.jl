@@ -1,4 +1,4 @@
 using SocialSim
 
-run_sim(1,300,10000)
+run_sim(1,300,100000)
 

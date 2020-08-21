@@ -1,15 +1,3 @@
-function Resume()
-    #Loads a prior run and continues where it left of
-end
-
-function Save()
-    #Saves progress to a certain dataframe/CSV
-end
-
-function Procedure1(ID)
-    #TODO: Implement prototype 1
-end
-
 function rewire!(network, nodes, ID, options; remove=false)
     isempty(options) && return
 
