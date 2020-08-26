@@ -1,0 +1,17 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}%
+\contentsline {chapter}{\numberline {2}Statistical Physics of Social Dynamics: A Brief Review}{3}%
+\contentsline {section}{\numberline {2.1}The Ising Paradigm}{3}%
+\contentsline {section}{\numberline {2.2}Cultural dynamics}{3}%
+\contentsline {chapter}{\numberline {3}Model Setup}{5}%
+\contentsline {section}{\numberline {3.1}Agent characteristics}{5}%
+\contentsline {section}{\numberline {3.2}Network rewiring}{5}%
+\contentsline {section}{\numberline {3.3}Opinion dynamics}{6}%
+\contentsline {section}{\numberline {3.4}Overall execution procedure}{6}%
+\contentsline {subsection}{\numberline {3.4.1}Lorem ipsum}{7}%
+\contentsline {chapter}{\numberline {4}Titlul capitolului 3}{9}%
+\contentsline {section}{\numberline {4.1}Lorem ipsum }{9}%
+\contentsline {section}{\numberline {4.2}Lorem ipsum }{9}%
+\contentsline {subsection}{\numberline {4.2.1}Lorem ipsum }{9}%
+\contentsline {subsection}{\numberline {4.2.2}Lorem ipsum }{10}%
+\contentsline {chapter}{\numberline {5}Concluzii/Concluzii Generale}{11}%
+\contentsline {chapter}{References}{11}%

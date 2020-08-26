@@ -1,0 +1,535 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.26)  26 AUG 2020 14:26
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/slaat3/Documents/Bachelor-Thesis/Thesis/main.tex
+(/home/slaat3/Documents/Bachelor-Thesis/Thesis/main.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
+\Gm@bindingoffset=\dimen137
+\Gm@wd@mp=\dimen138
+\Gm@odd@mp=\dimen139
+\Gm@even@mp=\dimen140
+\Gm@layoutwidth=\dimen141
+\Gm@layoutheight=\dimen142
+\Gm@layouthoffset=\dimen143
+\Gm@layoutvoffset=\dimen144
+\Gm@dimlist=\toks15
+) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count179
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen145
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen146
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count180
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count181
+\leftroot@=\count182
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count183
+\DOTSCASE@=\count184
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count185
+\c@MaxMatrixCols=\count186
+\dotsspace@=\muskip16
+\c@parentequation=\count187
+\dspbrk@lvl=\count188
+\tag@help=\toks17
+\row@=\count189
+\column@=\count190
+\maxfields@=\count191
+\andhelp@=\toks18
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks19
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen154
+\captionmargin@=\dimen155
+\captionwidth=\dimen156
+\caption@tempdima=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count192
+\c@continuedfloat=\count193
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks21
+) (/home/slaat3/Documents/Bachelor-Thesis/Thesis/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen161
+\enit@toks=\toks22
+\enit@inbox=\box47
+\enit@count@id=\count194
+\enitdp@description=\count195
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box48
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
+\ttl@plus=\dimen162
+\ttl@minus=\dimen163
+\ttl@toksa=\toks23
+\titlewidth=\dimen164
+\titlewidthlast=\dimen165
+\titlewidthfirst=\dimen166
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen167
+\WF@size=\dimen168
+\c@WF@wrappedlines=\count196
+\WF@box=\box49
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (597.50787pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (845.04684pt) is ignored.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count197
+\l__pdf_internal_box=\box50
+) (/home/slaat3/Documents/Bachelor-Thesis/Thesis/main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count198
+\scratchdimen=\dimen169
+\scratchbox=\box51
+\nofMPsegments=\count199
+\nofMParguments=\count266
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count267
+\MPscratchDim=\dimen170
+\MPnumerator=\count268
+\makeMPintoPDFobject=\count269
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=688.5567pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-33.0119pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+<./antet_L.jpg, id=1, 1214.5375pt x 349.305pt>
+File: ./antet_L.jpg Graphic file (type jpg)
+<use ./antet_L.jpg>
+Package pdftex.def Info: ./antet_L.jpg  used on input line 52.
+(pdftex.def)             Requested size: 455.24408pt x 130.92508pt.
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./antet_L.JPG>] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+[1] [2] (/home/slaat3/Documents/Bachelor-Thesis/Thesis/main.toc)
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [0
+
+]
+{\huge } 1.
+
+Package natbib Warning: Citation `book1' on page 1 undefined on input line 142.
+
+
+Package natbib Warning: Citation `book1' on page 1 undefined on input line 142.
+
+
+Package natbib Warning: Citation `art1' on page 1 undefined on input line 142.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+<figure1.jpg, id=22, 328.22626pt x 299.1175pt>
+File: figure1.jpg Graphic file (type jpg)
+<use figure1.jpg>
+Package pdftex.def Info: figure1.jpg  used on input line 161.
+(pdftex.def)             Requested size: 199.16928pt x 181.50749pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+<figure2.jpg, id=23, 225.84375pt x 225.84375pt>
+File: figure2.jpg Graphic file (type jpg)
+<use figure2.jpg>
+Package pdftex.def Info: figure2.jpg  used on input line 169.
+(pdftex.def)             Requested size: 199.16928pt x 199.18076pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+[1
+
+ </home/slaat3/Documents/Bachelor-Thesis/Thesis/figure1.jpg>] [2 </home/slaat3/Documents/Bachelor-Thesis/Thesis/figure2.jpg>]
+{\huge } 2.
+
+Overfull \hbox (10.68555pt too wide) in paragraph at lines 176--176
+|[]\OT1/cmr/bx/n/20.74 Statistical Physics of So-cial Dy-nam-ics: A Brief
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+[3
+
+] [4]
+{\huge } 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+[5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+[7] [8
+
+]
+{\huge } 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
+
+ []
+
+[10]
+{\huge } 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
+
+ []
+
+(/home/slaat3/Documents/Bachelor-Thesis/Thesis/main.bbl [11
+
+] [12
+
+])
+
+Package natbib Warning: There were undefined citations.
+
+[13] (/home/slaat3/Documents/Bachelor-Thesis/Thesis/main.aux) ) 
+Here is how much of TeX's memory you used:
+ 4536 strings out of 481239
+ 67599 string characters out of 5920377
+ 320704 words of memory out of 5000000
+ 19766 multiletter control sequences out of 15000+600000
+ 541956 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,10n,42p,600b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on /home/slaat3/Documents/Bachelor-Thesis/Thesis/main.pdf (18 pages, 340682 bytes).
+PDF statistics:
+ 126 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
