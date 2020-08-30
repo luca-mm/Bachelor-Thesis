@@ -127,12 +127,23 @@ function trackPreference!(data, old, new)
     datacol(data, new)[end] += 1
 end
 
+function checkEquilibrium(data)
+    lim = length(data.E)
+    for i in 1:10
+        if datacol(data,i) == 1000
+            return true
+        else
+            return false
+        end
+    end    
+end
+
 #Plotting
 #TODO: get it from storage
 function plotAnalysis(t, dir, data, nodes, network)
 
     #Energy evolution
-    plot1=plot(1:t+1, data.E[1:t+1]#=/Data.E[1]=#, legend=false)
+    plot1=plot(1:t+1, data.E[1:t+1]#=/Data.E[1]=#, legend=false, size(1200,800))
     xlabel!("Time")
     ylabel!("E/E_0")
     #xlims!(51000,52000)
@@ -142,7 +153,7 @@ function plotAnalysis(t, dir, data, nodes, network)
 
     #Energy distribution
     energyDistribution=counts(-data.E)
-    plot2=plot(1:length(energyDistribution), energyDistribution, legend=false)
+    plot2=plot(1:length(energyDistribution), energyDistribution, legend=false, size(1200,800))
     title!("Energy distribution")
     png("Data/$dir/EnergyDistribution")
 

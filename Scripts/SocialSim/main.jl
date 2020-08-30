@@ -1,4 +1,4 @@
 using SocialSim
 
-run_sim(1,300,100000)
+sweep_temp(20,5,50)
 

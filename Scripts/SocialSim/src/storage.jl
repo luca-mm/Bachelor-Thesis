@@ -36,3 +36,13 @@ function exportNetwork(dir, network, nodes, step)
     #Exporting the graph
     savegraph("Data/$dir/Network/graph_$step.net", network, "Network", GraphIO.NET.NETFormat())
 end
+
+function exportEquilibriumLog(T_step, equilibriumTime, dir)
+    eq_df = DataFrame(T = Int[], eqTime = Int[])
+    
+    for i in 1:length(equilibriumTime)
+        push!(eq_df, (equilibriumTime[i], i*T_step))
+    end
+
+    CSV.write("Data/$dir/Equilibrium_log.csv", eq_df)
+end

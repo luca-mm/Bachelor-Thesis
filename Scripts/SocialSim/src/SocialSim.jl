@@ -12,6 +12,7 @@ using StatsBase
 using ProgressMeter
 
 export run_sim
+export sweep_temp
 
 const J = 1
 
@@ -51,6 +52,48 @@ function run_sim(T,population,steps; exports_number=10)
     #Export data to a new folder
     exportData(exportTime, data, network, nodes)
     plotAnalysis(steps, exportTime, data, nodes, network)
+end
+
+function sweep_temp(T_f,T_step,population)
+    
+    #Random.seed!(1234)
+
+    #Get time of simulation and prepare folders
+    exportTime = Dates.format(Dates.now(), "yyyy-mm-ddTHH-MM-SS")
+    mkdir("Data/$exportTime")
+    
+    #Initializing network and data frame
+    data = createDataFrame()
+    network, nodes = initNetwork(data, population)
+
+    #Sweep temp
+    equilibriumTime = []
+    @showprogress 5 "Computing..." for T in 1:T_step:T_f
+        counter = 0    
+        mkdir("Data/$exportTime/T=$T")
+        mkdir("Data/$exportTime/T=$T/Network")
+
+        while checkEquilibrium(data) == false
+            ni = rand(1:population)
+            procedure2(nodes, network, data, ID=ni, N=population, T=T)
+            counter += 1
+        end
+
+        #Export data to a new folder
+        exportData("$exportTime/T=$T", data, network, nodes)
+        exportNetwork("$exportTime/T=$T", network, nodes, i)
+        plotAnalysis(steps, "$exportTime/T=$T", data, nodes, network)
+
+        push!(equilibriumTime, counter)
+        println("Simulation for T=$T done")
+    end
+
+    #Export equilibriumTime
+    exportEquilibriumLog(T_step, equilibriumTime, exportTime)
+    plotEquilibriumTime=plot(1:T_step:T_f, equilibriumTime, legend=false, size(1200,800))
+    xlabel!("Temperature")
+    ylabel!("Equilibrium Time")
+    png("Data/$dir/Equilibrium_time")
 end
 
 #Runs the simulation at T for a determined time interval (in hours)
