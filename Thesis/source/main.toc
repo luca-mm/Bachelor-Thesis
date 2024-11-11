@@ -1,0 +1,27 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The Ising paradigm}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Scale-free distributions}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Scale-free networks}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Social networks}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Justification for a two-layered model}{9}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Model Setup}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Agent characteristics}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Network rewiring}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Opinion dynamics}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Overall execution procedure}{12}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Results}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Fixed rewiring probability}{16}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Majority rule}{17}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Random initial network}{18}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Varying rewiring frequency}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Varying temperature}{19}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusions}{23}{chapter.4}%
+\contentsline {chapter}{References}{23}{chapter.4}%
+\contentsline {chapter}{Appendices}{29}{section*.24}%
+\contentsline {chapter}{\numberline {A}Simulation Code}{31}{appendix.a.A}%
+\contentsline {section}{\numberline {A.1}SocialSim.jl}{31}{section.a.A.1}%
+\contentsline {section}{\numberline {A.2}init.jl}{33}{section.a.A.2}%
+\contentsline {section}{\numberline {A.3}dynamics.jl}{33}{section.a.A.3}%
+\contentsline {section}{\numberline {A.4}analysis.jl}{35}{section.a.A.4}%
+\contentsline {section}{\numberline {A.5}storage.jl}{37}{section.a.A.5}%
+\contentsline {chapter}{\numberline {B}Plots}{39}{appendix.a.B}%
